@@ -1,0 +1,88 @@
+/* ============== footer start ================== */
+
+.footer {
+    padding: 56px 0;
+    background-color: var(--main-title);
+}
+
+.footer__logo {
+    display: inline-block;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    text-align: center;
+    fill:#fff;
+}
+
+.footer__network-icon {
+    fill:#fff;
+}
+
+.footer__list {
+    @include list-unstyle;
+    text-align: center
+}
+
+
+
+.footer__link {
+    display: inline-block;
+    @include font (12px, 14px, 400, #fff);
+    text-decoration: none;
+    margin-bottom: 32px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.footer__network {
+    @include list-unstyle;
+    display: flex;
+}
+
+.footer__network-item {
+    display: inline-block;
+    margin-left: 16px;
+}
+
+.footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/* ============================== 730px ==================== */
+
+@include mobile-first (730px) {
+
+    .footer {
+        padding: 24px 0;
+    }
+
+    .footer__wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer__block {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer__list {
+        display: flex;
+        margin-left: 50px;
+    }
+
+    .footer__logo {
+        margin: 0;
+    }
+
+    .footer__link  {
+        margin-right: 42px;
+        margin-bottom: 0;
+    }
+
+}
+
+/* ============== footer end ================== */

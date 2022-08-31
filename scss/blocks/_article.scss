@@ -1,0 +1,124 @@
+/* =============== Article start ========================== */
+
+.article {
+    padding-bottom: 80px;
+}
+
+.article__title {
+    font-family: "Ibarra Real Nova" , "Times Roman" , serif;
+    @include font (42px, 42px, 700, var(--main-title));
+    margin-top: 0;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.article__button {
+    display: inline-block;
+    width: 168px;
+    @include font (12px, 14px, 400, var(--main-title));
+    padding: 17px 0;
+    text-align: center;
+    letter-spacing: 2px;
+    text-decoration: none;
+    border: 1px solid var(--main-title);
+    transition: 0.5s ease;
+    &:hover {
+        background-color: var(--main-title);
+        color:#fff;
+    }
+}
+
+.article__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/* ============================== 320px ==================== */
+
+@include mobile-first (320px) {
+    
+    .article__title {
+        font-size: 32px;
+    }
+}
+
+/* ============================== 375px ==================== */
+
+@include mobile-first (375px) {
+    
+    .article__title {
+        font-size: 42px;
+    }
+}
+
+/* ============================== 730px ==================== */
+
+@include mobile-first (730px) {
+    
+    .article {
+        padding-bottom: 96px;
+    }
+    
+    
+    .article__wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .article__title-box {
+        max-width: 350px;
+        width: 100%;
+    }
+    
+    .article__title {
+        text-align: start;
+        margin-bottom: 0;
+    }
+    
+    .article__span {
+        display: inline-block;
+        max-width: 113px;
+        width: 100%;
+        height: 1px;
+        background-color: #ddddde;
+    }
+    
+}
+
+
+/* ============================== 730px ==================== */
+
+@include mobile-first (900px) {
+    
+    .article__span {
+        max-width: 300px;
+        width: 100%;
+    }
+}
+
+/* ============================== 1110px ==================== */
+
+@include mobile-first (1100px) {
+    
+    .article {
+        padding-bottom: 150px;
+    }
+}
+
+
+
+
+/* ============================== 730px ==================== */
+
+@include mobile-first (1200px) {
+    
+    .article__span {
+        max-width: 534px;
+        width: 100%;
+    }
+}
+/* =============== Article end ========================== */

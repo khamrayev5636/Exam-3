@@ -1,0 +1,66 @@
+/* ============= Touch start ====================== */
+
+.touch__wrapper {
+    border-top: 1px solid #ddddde;
+    border-bottom: 1px solid #ddddde;
+}
+
+.touch__title {
+    font-family: "Ibarra Real Nova" , "Times Roman" , serif;
+    @include font (40px, 42px, 700, var(--main-title));
+    margin-top: 0;
+    margin-bottom: 24px;
+    padding-top: 24px;
+}
+.touch__desc {
+    max-width: 689px;
+    width: 100%;
+}
+.touch__desc-text {
+    @include font (15px, 30px, 400, var(--main-title));
+    opacity: 0.8;
+    margin-top: 0;
+    margin-bottom: 24px;
+
+}
+.touch__desc-list {
+    @include list-unstyle;
+    display: flex;
+    margin-bottom: 32px;
+}
+.touch__desc-item {
+    margin-right: 15px;
+}
+.touch__desc-icon {
+    display: inline-block;
+}
+
+
+/* ================== 689px ================== */  
+
+@include mobile-first (689px) {
+
+    .touch {
+        padding-top: 50px;
+    }
+
+}
+
+
+/* ================== 1000px ================== */  
+
+@include mobile-first (1000px) {
+    .touch__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 48px;
+    }
+
+    .touch__desc {
+        width: 635px;
+    }
+
+    .touch__desc-list  {
+        margin-bottom: 48px;
+    }
+}

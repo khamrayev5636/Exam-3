@@ -1,0 +1,125 @@
+/* ============= header start =========== */
+
+.header {
+    padding: 32px 0 45px;
+}
+
+.header__wrapper {
+    position: relative;
+}
+
+.header__logo-burger {
+    background-image: url("../images/burger.svg");
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 13px;
+    background-color: transparent;
+    border: none;
+}
+
+.header__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav {
+    position: absolute;
+    top: 77px;
+    right: 0;
+    max-width: 223px;
+    width: 100%;
+    background-color: var(--main-title);
+    transition: 1s ease-in-out;
+    transform: translateY(-200%);
+    overflow: hidden;
+}
+
+.shownav .header__nav {
+    transform: translateY(0);
+}
+
+
+
+.shownav .header__logo-burger {
+    background-image: url("../images/burger-X.svg");
+    width: 18px;
+    height: 19px;
+}
+
+.header__list {
+    @include list-unstyle;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.header__item {
+    margin-bottom: 32px;
+}
+
+.header__item:last-child {
+    margin-bottom: 0;
+}
+
+.header__link {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:#fff;
+}
+
+
+.active {
+    color:var(--button-hover);
+}
+
+
+
+@include mobile-first (689px) {
+
+    .header__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__logo-burger {
+        display: none;
+    }
+
+    .header__nav {
+        position: static;
+        max-width: max-content;
+        transform: translateY(0);
+        background-color: transparent;
+    }
+    
+    .header__list {
+        display: flex;
+        padding: 0;
+    }
+   
+    
+    .header__link {
+        color:var(--main-title);
+        margin-left: 42px;
+    }
+
+    .active {
+        color: var(--button-hover);
+    }
+
+    .header__item {
+        margin: 0;
+    }
+
+}
+
+
+/* ============================== 1100px ==================== */
+
+

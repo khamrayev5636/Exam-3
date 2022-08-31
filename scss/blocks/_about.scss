@@ -1,0 +1,133 @@
+/* About start */ 
+
+.about {
+    padding-top: 270px;
+    padding-bottom: 115px;
+}
+
+.about__image {
+    margin-bottom:32px;
+}
+
+.about__desc-title {
+    font-family: "Ibarra Real Nova" , "Times Roman" , serif;
+    @include font (40px, 42px, 700, var(--main-title));
+    margin-top: 0;
+    margin-top: 33px;
+    margin-bottom: 28px;
+}
+
+.about__desc-text {
+    @include font (16px, 30px, 400, var(--main-title));
+    margin-top: 0;
+    margin-bottom: 24px;
+    opacity: 0.8;
+}
+
+.about__desc-button {
+    display: inline-block;
+    max-width: 202px;
+    width: 100%;
+    @include font(12px, 14px, 400, var(--main-title));
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 51px;
+    padding: 17px 0;
+    text-decoration: none;
+    border: 1px solid var(--main-title);
+    transition: 0.5s ease;
+    &:hover {
+        background-color: var(--main-title);
+        color:#fff;
+    }
+}
+
+.about__desc {
+    border-top: 1px solid #ddddde;
+    border-bottom: 1px solid #ddddde;
+}
+
+
+/* ============================== 320px ==================== */
+
+@include mobile-first (320px) {
+    
+    .about__image {
+        max-width: 300px;
+        width: 100%;
+    }
+    
+}
+
+/* ============================== 375px ==================== */
+
+@include mobile-first (375px) {
+    
+    .about__image {
+        max-width: 500px;
+        width: 100%;
+    }
+    
+}
+
+
+
+/* ============================== 564px ==================== */
+
+@include mobile-first (564px) {
+    
+    .about__image {
+        max-width: 670px;
+        width: 100%;
+    }
+    
+}
+
+
+/* ============================== 730px ==================== */
+
+@include mobile-first (730px) {
+
+    .about {
+        padding-top: 0;
+    }
+
+
+
+    .about__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about__desc {
+        max-width: 339px;
+        width: 100%;
+    }
+
+    .about__image {
+        margin-bottom: 0;
+    }
+
+    
+    .about__desc-title {
+        margin-top: 48px;
+        margin-bottom: 28px;
+    }
+
+
+    .about__desc-button{
+        margin-bottom: 46px;
+    }
+}
+
+
+/* ============================== 800px ==================== */
+
+@include mobile-first (1100px) {
+    .about__desc {
+        max-width: 350px;
+        width: 100%;
+    }
+
+  
+}
